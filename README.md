@@ -359,63 +359,7 @@ Artifacts saved to   : outputs
 | `AttackArtifactGenerationAgent` | CSV, JSON, TXT 형태의 실행 결과를 저장 |
 
 ---
-
-## 12. 보고서에 넣기 좋은 실행 결과 문구
-
-아래 문구를 보고서의 **AI 에이전트 구현 및 테스트 결과** 부분에 사용할 수 있습니다.
-
-```text
-본 프로토타입은 UAV-GCS-C2-UGV 합동 정찰 임무에서 C2 상황인식 왜곡을 수행하는 공격 AI Agent이다. 단일 공격 파라미터를 고정하지 않고 Monte Carlo 기반 다중 시나리오 평가를 수행한다. AttackScenarioPlannerAgent는 영상 재생 지연 시간, RTT 증가량, packet loss, GNSS bias, IMU suppression, log delay 후보를 생성하고, C2DecisionAgent와 StealthEvaluationAgent를 통해 각 후보의 공격 성공성과 은닉성을 평가한다.
-
-실험 결과, 여러 시나리오에서 C2 판단이 DANGER/HOLD_POSITION에서 SAFE/MOVE_UGV_TO_ROUTE_A로 전환되는 것을 확인하였다. 이는 공격 Agent가 고정 규칙이 아니라 작전 환경과 정상 기준선에 따라 공격 강도를 조절할 수 있음을 보여준다.
-```
-
----
-
-## 13. 제출 전 정리 방법
-
-Python과 pytest 실행 후 아래 임시 캐시 폴더가 생길 수 있습니다.
-
-```text
-.pytest_cache/
-__pycache__/
-*.pyc
-```
-
-이 파일들은 실행에 필요한 파일이 아닙니다. 제출 ZIP에서는 제거해도 됩니다.  
-Windows PowerShell에서 제거하려면 다음 명령을 실행합니다.
-
-```powershell
-Remove-Item -Recurse -Force .pytest_cache -ErrorAction SilentlyContinue
-Get-ChildItem -Recurse -Directory -Filter "__pycache__" | Remove-Item -Recurse -Force
-Get-ChildItem -Recurse -Filter "*.pyc" | Remove-Item -Force
-```
-
-macOS/Linux에서는 다음 명령을 사용할 수 있습니다.
-
-```bash
-rm -rf .pytest_cache
-find . -type d -name "__pycache__" -prune -exec rm -rf {} +
-find . -type f -name "*.pyc" -delete
-```
-
-제출 ZIP에는 아래 항목을 포함하면 됩니다.
-
-```text
-README.md
-requirements.txt
-Dockerfile
-run_demo.bat
-run_demo.sh
-src/
-tests/
-docs/
-outputs/
-```
-
----
-
-## 14. 자주 발생하는 오류와 해결 방법
+## 12. 자주 발생하는 오류와 해결 방법
 
 ### 오류 1. `Could not open requirements file: No such file or directory`
 
