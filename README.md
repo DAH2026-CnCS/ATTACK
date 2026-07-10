@@ -421,7 +421,7 @@ Remove-Item -Recurse -Force .pytest_cache -ErrorAction SilentlyContinue
 
 ---
 
-## 15. 안전성 고지
+## 13. 안전성 고지
 
 본 코드는 실제 UAV, GCS, C2, UGV 시스템을 공격하는 도구가 아닙니다.
 
