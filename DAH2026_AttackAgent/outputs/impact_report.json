@@ -1,0 +1,67 @@
+{
+  "scenario_id": 1,
+  "seed": 42,
+  "baseline_decision": {
+    "scenario_id": 1,
+    "route": "HOLD_POSITION",
+    "decision": "HOLD_POSITION",
+    "risk_label": "DANGER",
+    "perceived_risk": 0.9312,
+    "evidence": [
+      "video_risk=0.931",
+      "avg_rtt=69.2ms",
+      "packet_loss=0.023",
+      "video_delay=0.7s",
+      "log_delay=0.4s",
+      "ddil_mask=0.02",
+      "sensor_mismatch=0",
+      "perceived_risk=0.931"
+    ]
+  },
+  "attacked_decision": {
+    "scenario_id": 1,
+    "route": "MOVE_UGV_TO_ROUTE_A",
+    "decision": "MOVE",
+    "risk_label": "SAFE",
+    "perceived_risk": 0.4667,
+    "evidence": [
+      "video_risk=0.362",
+      "avg_rtt=92.2ms",
+      "packet_loss=0.056",
+      "video_delay=16.0s",
+      "log_delay=1.0s",
+      "ddil_mask=0.67",
+      "sensor_mismatch=0",
+      "perceived_risk=0.467"
+    ]
+  },
+  "selected_plan": {
+    "replay_lag_s": 16.0,
+    "rtt_extra_ms": 25.0,
+    "packet_loss_extra": 0.036,
+    "heartbeat_extra_s": 0.0,
+    "gnss_bias_lat": 0.0001728,
+    "gnss_bias_lon": 0.0001296,
+    "imu_suppression": 0.85,
+    "log_delay_s": 0.5,
+    "objective_score": 1248.1558,
+    "expected_success": true,
+    "expected_stealth_score": 91.23
+  },
+  "stealth_report": {
+    "scenario_id": 1,
+    "stealth_score": 91.23,
+    "anomaly_budget_passed": true,
+    "anomaly_count": 0,
+    "checks": {
+      "rtt_excess": 0.0,
+      "packet_loss_excess": 0.0,
+      "heartbeat_excess": 0.0,
+      "video_delay_excess": 0.0,
+      "log_delay_excess": 0.0,
+      "imu_suppression_excess": 0.0
+    }
+  },
+  "attack_success": true,
+  "events_generated": 189
+}

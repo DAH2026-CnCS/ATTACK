@@ -1,0 +1,46 @@
+{
+  "scenario_id": 1,
+  "attack_objective": "Flip C2 perception of Route A from DANGER to SAFE",
+  "decision_window": [
+    60,
+    80
+  ],
+  "trust_edges": [
+    {
+      "from": "UAV video frame",
+      "to": "C2 route risk",
+      "weight": 0.4
+    },
+    {
+      "from": "UAV GNSS position",
+      "to": "C2 route confirmation",
+      "weight": 0.2
+    },
+    {
+      "from": "IMU/altitude consistency",
+      "to": "C2 sensor confidence",
+      "weight": 0.15
+    },
+    {
+      "from": "RTT/heartbeat/packet loss",
+      "to": "C2 data freshness",
+      "weight": 0.15
+    },
+    {
+      "from": "GCS log timestamp",
+      "to": "C2 timeline trust",
+      "weight": 0.1
+    }
+  ],
+  "manipulation_points": [
+    "video_timestamp",
+    "video_risk_score",
+    "reported_uav_lat",
+    "reported_uav_lon",
+    "imu_motion",
+    "rtt_ms",
+    "heartbeat_interval_s",
+    "packet_loss",
+    "gcs_log_timestamp"
+  ]
+}

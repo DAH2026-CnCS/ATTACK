@@ -1,0 +1,9 @@
+{
+  "replay_lag=16.0s, rtt_extra=25.0ms, loss_extra=0.036, imu_suppress=0.85, log_delay=0.5s": 1,
+  "replay_lag=20.0s, rtt_extra=10.0ms, loss_extra=0.000, imu_suppress=0.85, log_delay=0.5s": 2,
+  "replay_lag=22.0s, rtt_extra=10.0ms, loss_extra=0.036, imu_suppress=0.85, log_delay=0.5s": 2,
+  "replay_lag=8.0s, rtt_extra=10.0ms, loss_extra=0.000, imu_suppress=0.85, log_delay=0.5s": 1,
+  "replay_lag=20.0s, rtt_extra=10.0ms, loss_extra=0.036, imu_suppress=0.85, log_delay=0.5s": 2,
+  "replay_lag=12.0s, rtt_extra=10.0ms, loss_extra=0.000, imu_suppress=0.85, log_delay=0.5s": 3,
+  "replay_lag=22.0s, rtt_extra=25.0ms, loss_extra=0.036, imu_suppress=0.85, log_delay=0.5s": 1
+}

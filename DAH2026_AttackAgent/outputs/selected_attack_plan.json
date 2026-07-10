@@ -1,0 +1,13 @@
+{
+  "replay_lag_s": 16.0,
+  "rtt_extra_ms": 25.0,
+  "packet_loss_extra": 0.036,
+  "heartbeat_extra_s": 0.0,
+  "gnss_bias_lat": 0.0001728,
+  "gnss_bias_lon": 0.0001296,
+  "imu_suppression": 0.85,
+  "log_delay_s": 0.5,
+  "objective_score": 1248.1558,
+  "expected_success": true,
+  "expected_stealth_score": 91.23
+}

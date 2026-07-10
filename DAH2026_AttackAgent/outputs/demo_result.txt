@@ -1,0 +1,20 @@
+DAH2026 Attack AI Agent v3 - Monte Carlo Adaptive Planner
+===========================================================
+Scenario 1: replay_lag=16.0s, rtt_extra=25.0ms, loss_extra=0.036, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=91.2
+Scenario 2: replay_lag=20.0s, rtt_extra=10.0ms, loss_extra=0.000, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=93.2
+Scenario 3: replay_lag=22.0s, rtt_extra=10.0ms, loss_extra=0.036, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=86.6
+Scenario 4: replay_lag=22.0s, rtt_extra=10.0ms, loss_extra=0.036, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=87.8
+Scenario 5: replay_lag=20.0s, rtt_extra=10.0ms, loss_extra=0.000, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=93.0
+Scenario 6: replay_lag=8.0s, rtt_extra=10.0ms, loss_extra=0.000, imu_suppress=0.85, log_delay=0.5s, success=False, stealth=95.8
+Scenario 7: replay_lag=20.0s, rtt_extra=10.0ms, loss_extra=0.036, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=92.8
+Scenario 8: replay_lag=12.0s, rtt_extra=10.0ms, loss_extra=0.000, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=94.2
+Scenario 9: replay_lag=20.0s, rtt_extra=10.0ms, loss_extra=0.036, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=92.1
+Scenario 10: replay_lag=12.0s, rtt_extra=10.0ms, loss_extra=0.000, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=95.2
+Scenario 11: replay_lag=22.0s, rtt_extra=25.0ms, loss_extra=0.036, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=85.9
+Scenario 12: replay_lag=12.0s, rtt_extra=10.0ms, loss_extra=0.000, imu_suppress=0.85, log_delay=0.5s, success=True, stealth=94.7
+
+Attack success rate : 91.7%
+Average stealth score: 91.9
+Budget pass rate     : 100.0%
+Plan diversity       : 7
+Most frequent plan   : replay_lag=12.0s, rtt_extra=10.0ms, loss_extra=0.000, imu_suppress=0.85, log_delay=0.5s
